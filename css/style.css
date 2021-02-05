@@ -7,6 +7,12 @@ body {
     font-size: 16px;
 }
 
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
 /************************************* 
                 HEADER 
 **************************************/
@@ -25,3 +31,25 @@ header h1 {
 /************************************* 
             MAIN / GRAHIQUE 
 **************************************/
+
+main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+main .wrapper-chart {
+    width: 90%;
+}
+
+/************************************* 
+                FOOTER 
+**************************************/
+footer {
+    background-color: lightseagreen;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
