@@ -1,0 +1,27 @@
+
+/************************************* 
+            BODY / WRAPPER 
+**************************************/
+
+body {
+    font-size: 16px;
+}
+
+/************************************* 
+                HEADER 
+**************************************/
+header {
+    background-color: lightseagreen;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+header h1 {
+    font-size: 3rem;
+}
+
+/************************************* 
+            MAIN / GRAHIQUE 
+**************************************/
