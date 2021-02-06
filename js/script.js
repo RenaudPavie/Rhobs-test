@@ -43,16 +43,16 @@ window.addEventListener('load', () => {
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1,
                 data: [
-                    filtreAge(menData,65).length,
-                    filtreAge(menData,60,65).length,
-                    filtreAge(menData,55,60).length,
-                    filtreAge(menData,50,55).length,
-                    filtreAge(menData,45,50).length,
-                    filtreAge(menData,40,45).length,
-                    filtreAge(menData,35,40).length,
-                    filtreAge(menData,30,35).length,
-                    filtreAge(menData,25,30).length,
-                    filtreAge(menData,18,25).length,
+                    "-" + filtreAge(menData,65).length,
+                    "-" +filtreAge(menData,60,65).length,
+                    "-" +filtreAge(menData,55,60).length,
+                    "-" +filtreAge(menData,50,55).length,
+                    "-" +filtreAge(menData,45,50).length,
+                    "-" +filtreAge(menData,40,45).length,
+                    "-" +filtreAge(menData,35,40).length,
+                    "-" +filtreAge(menData,30,35).length,
+                    "-" +filtreAge(menData,25,30).length,
+                    "-" +filtreAge(menData,18,25).length,
                 ]
             }, 
             {
@@ -81,6 +81,7 @@ window.addEventListener('load', () => {
             type: 'horizontalBar',
             data: horizontalBarChartData,
             options: {
+                
                 responsive:true,
                 title: {
                     display:true,
@@ -90,18 +91,22 @@ window.addEventListener('load', () => {
                     position:'right'
                 },
                 scales: {
-                    yAxes: [{
-                        ticks :{
-                            beginAtZero:true
+                    xAxes: [{
+                        stacked:true,
+                        ticks: {
+                            beginAtZero: false,
+                            min:-100,
+                            max:100,
                         }
                     }],
-                    xAxes:[{
-                        beginAtZero:true,
-                        min:0,
-                        max:200
-                    }]
+                    yAxes: [{
+                        stacked:true,
+                        ticks: {
+                            beginAtZero: false,
+                        }
+                    }],
                 }
             }
-            });
+        });
     }); 
 })
