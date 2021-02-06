@@ -1,3 +1,25 @@
+/************************************* 
+            GENERIC CLASSES 
+**************************************/
+::-webkit-scrollbar {
+    width: 0px;
+}
+.chartSections {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    width: 100%;
+    /* height: 100%; */
+    padding:15px;
+}
+.filterSections {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    padding:15px;
+    width: 40%;
+    margin:auto
+}
 
 /************************************* 
             BODY / WRAPPER 
@@ -5,27 +27,33 @@
 
 body {
     font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
     min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: lightgrey;
 }
 /************************************* 
                 HEADER 
 **************************************/
 header {
     background-color: lightseagreen;
-    height: 50px;
+    height: 250px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     text-transform: uppercase;
+    position: relative;
 }
+
 header h1 {
     font-size: 3rem;
+    padding-top:35px;
 }
 
 /************************************* 
@@ -34,13 +62,48 @@ header h1 {
 
 main {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    margin-top: -125px;
+    /* margin-bottom: 100px; */
+}
+main section {
+    height: auto;
 }
 main .wrapper-chart {
-    width: 90%;
+ width: 100%;
 }
+main .wrapper-chart #showFilter {
+    border:none;
+    border:1px solid rgb(32, 178, 170);
+    border-radius: 5px;
+    background-color:rgb(32, 178, 170,0.5);
+    text-transform: uppercase;
+    padding:5px 10px;
+    margin:15px 0 0 0;
+}
+main .filter {
+    display: none;
+    margin: 15px auto;
+}
+main .filter .situationFilter {
+    display: flex;
+}
+main .filter.show {
+    display: flex;
+    flex-direction: column;
+}
+main .filter h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin:15px 0 30px 0;
+}
+main .filter h3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 
 /************************************* 
                 FOOTER 
@@ -52,4 +115,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+}
+footer p {
+    margin-bottom: 0;
 }
