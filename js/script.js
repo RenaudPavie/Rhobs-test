@@ -88,7 +88,7 @@ window.addEventListener('load', () => {
                     text:"Pyramide des âges de l'entreprise Factice SAS",
                 },
                 legend: {
-                    position:'right'
+                    position:'bottom'
                 },
                 scales: {
                     xAxes: [{
