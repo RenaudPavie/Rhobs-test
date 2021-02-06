@@ -18,7 +18,7 @@ body {
 **************************************/
 header {
     background-color: lightseagreen;
-    height: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ main .wrapper-chart {
 **************************************/
 footer {
     background-color: lightseagreen;
-    max-height: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
