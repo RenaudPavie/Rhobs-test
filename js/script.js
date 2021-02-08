@@ -222,7 +222,7 @@ window.addEventListener('load', () => {
                 intersect: true,
             },
             legend: {
-                display:false,
+                display:true,
                 position:'bottom'
             },
             scales: {
